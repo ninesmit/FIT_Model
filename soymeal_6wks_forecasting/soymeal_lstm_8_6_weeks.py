@@ -77,7 +77,7 @@ model = Sequential([
     LSTM(30, activation='tanh', return_sequences=False, recurrent_regularizer=l2(0.0005), bias_regularizer=l2(0.0005)),
     BatchNormalization(),
     Dropout(0.2),
-    Dense(100, activation='relu', kernel_regularizer=l2(0.0005)),
+    Dense(50, activation='relu', kernel_regularizer=l2(0.0005)),
     Dropout(0.2),
     Dense(forecast_horizon)
 ])
